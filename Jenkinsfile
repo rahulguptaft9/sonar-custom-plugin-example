@@ -29,7 +29,7 @@ stage('SonarQube'){
 		withSonarQubeEnv('sonar_coverage'){
 		sh '''
 		/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar_coverage/bin/sonar-scanner \
-		-Dsonar.host.url=http://192.168.122.141:9004/sonarqube \
+		-Dsonar.host.url=http://192.168.122.150:9004/sonarqube \
 		-Dsonar.login=f23103e283896f42e349cfbc3afe167a85c02817 \
 		-Dsonar.projectKey=javajava \
 		-Dsonar.projectName=javajava \
